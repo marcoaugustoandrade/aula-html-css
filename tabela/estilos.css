@@ -1,0 +1,65 @@
+:root {
+  --cor-primaria: #FFFFFF;
+  --cor-secundaria: #E2E2E2;
+  --cor-contraste: #1A1A1A;
+  --cor-detalhe: #D3310C;
+}
+
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.foto {
+  border-radius: 5px;
+  border: 1px var(--cor-contraste) solid;
+}
+
+.tabela {
+  width: 100%;
+  border: 1px var(--cor-contraste) solid;
+  border-collapse: collapse;
+}
+
+.tabela td, .tabela th {
+  border: 1px var(--cor-contraste) solid;
+  text-align: center;
+  /* min-width: 100px; /* pensar nos tamanhos das células */
+}
+
+.tabela th {
+  background-color: var(--cor-contraste);
+  color: var(--cor-primaria);
+  padding: 20px 0;
+}
+
+.tabela tr:nth-child(odd) {
+  background-color: var(--cor-secundaria);
+}
+
+.tabela tr:hover {
+  background-color: var(--cor-detalhe);
+  color: white;
+}
+
+.rodape {
+  background-color: var(--cor-secundaria);
+  padding: 20px 5px;
+  text-align: left !important;
+  color: var(--cor-contraste);
+}
+
+.paginador {
+  background-color: var(--cor-detalhe);
+  color: var(--cor-primaria);
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.resultados {
+  padding-left: 20px;
+}
+
+.container {
+  overflow-x: scroll;
+}

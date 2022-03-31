@@ -1,0 +1,89 @@
+:root {
+  --cor-primaria: #FFFFFF;
+  --cor-secundaria: #1A1A1A;
+  --cor-detalhe: #D3310C;
+  --cor-campos: #E7EAF2;
+  --cor-label: #718387;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif; 
+}
+
+.cabecalho {
+  margin: 10px;
+}
+
+.titulo {
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+
+.texto {
+  font-size: 12px;
+}
+
+.link, .link:visited {
+  color: var(--cor-detalhe);
+  font-size: 12px;
+}
+
+.formulario {
+  margin: 10px;
+}
+
+.formulario-campo {
+  background-color: var(--cor-campos);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.formulario-campo input {
+  background-color: var(--cor-campos);
+  border: 0;
+  padding: 10px 0;
+  color: var(--cor-secundaria);
+  width: 100%;
+  outline: none;
+}
+
+.icone-nome {
+  background: url('imagens/usuario.png') no-repeat right;
+}
+.icone-email {
+  background: url('imagens/email.png') no-repeat right;
+}
+.icone-senha {
+  background: url('imagens/mostrar-senha.png') no-repeat right;
+}
+
+.invalido {
+  border: 1px var(--cor-detalhe) solid;
+  background-color: var(--cor-primaria);
+}
+.invalido input {
+  background-color: var(--cor-primaria);
+}
+
+.mensagem {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--cor-detalhe);
+  padding-bottom: 10px;
+}
+
+.botao {
+  background-color: var(--cor-detalhe);
+  color: var(--cor-primaria);
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+}

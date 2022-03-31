@@ -1,0 +1,32 @@
+:root {
+  --cor-primaria: #FFD200;
+  --cor-secundaria: #2D3748;
+  --cor-fundo: #FFFFFF;
+  --cor-detalhe: #E74C3C;
+  --alpha: 0.6
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.cabecalho {
+  background-image: url('imagens/fundo_cabecalho.png');
+  background-size: cover;
+  height: 571px;
+}
+
+.titulo {
+  background-color: var(--cor-primaria);
+  padding: 20px;
+  text-align: right;
+}
+
+.data-evento {
+  background-color: var(--cor-primaria);
+  opacity: 0.4;
+  text-align: right;
+  margin: 20px;
+  padding: 20px;
+}

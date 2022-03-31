@@ -1,0 +1,23 @@
+:root {
+  --cor-principal: #1A1A1A;
+  --cor-secundaria: #272727;
+  --cor-fundo: #585757;
+  --cor-texto: #E9E9E9;
+}
+
+.modal {
+  background-color: var(--cor-principal);
+  color: var(--cor-texto);
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.botao {
+  background-color: #17CB49;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}

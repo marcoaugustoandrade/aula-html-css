@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <header class="cabecalho">
+    <h1>Formulário</h1>
+  </header>
+  <form class="formulario">
+    <div class="campo">
+      <div><label for="nome">Nome</label></div>
+      <div><input type="text" id="nome" placeholder="Ex.: Maria Oliveira"></div>
+    </div>
+    <div class="campo">
+      <div>
+        <label for="sexo">Sexo</label>
+      </div>
+      <div>
+        <input type="radio" id="sexo_f" name="sexo" checked><label for="sexo_f" class="label-sexo">Feminino</label>
+        <input type="radio" id="sexo_m" name="sexo"><label for="sexo_m" class="label-sexo">Masculino</label>
+      </div>
+    </div>
+    <div class="campo">
+      <div><label for="estados">Estado</label></div>
+      <div>
+        <select id="estados" autocomplete="off" class="estados">
+          <option value="AC">Acre</option>
+          <option value="AM">Amazonas</option>
+          <option value="AP">Amapá</option>
+          <option value="RO" selected>Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="PA">Pará</option>
+          <option value="TO">Tocatins</option>
+        </select>
+      </div>
+    </div>
+    <div class="campo">
+      <div><label for="atendimento">Descreva o atendimento especial:</label></div>
+      <div><textarea id="atendimento"></textarea></div>
+    </div>
+    <div class="campo">
+      <input type="checkbox" id="termos">
+      <label for="termos">Estou de acordo com o termos de serviço</label>
+    </div>
+    <div>
+      <input type="submit" value="Cadastrar" class="botao">
+    </div>
+  </form>
+</body>
+</html>

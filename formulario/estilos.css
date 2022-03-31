@@ -1,0 +1,74 @@
+:root{
+  --cor-primaria: #274156;
+  --cor-secundaria: #1C6E8C;
+  --cor-fundo: #FFFFFF;
+  --cor-texto: #605856;
+  --cor-texto-alternativo: #D0CCD0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+::selection {
+  background-color: #98336C;
+  color: white;
+}
+
+.cabecalho {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-fundo);
+  padding: 10px;
+}
+
+.formulario {
+  margin: 10px;
+}
+.formulario label {
+  color: var(--cor-texto);
+  font-size: 14px;
+  font-weight: bold;
+}
+.formulario input[type="text"], .formulario textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px var(--cor-secundaria) solid;
+  width: 100%;
+  outline: none;
+  color: var(--cor-secundaria);
+}
+
+.campo {
+  margin-bottom: 10px;
+}
+
+.label-sexo {
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.estados {
+  background-color: var(--cor-fundo);
+  color: var(--cor-secundaria);
+  border: 1px var(--cor-secundaria) solid;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.botao {
+  background-color: var(--cor-primaria);
+  color: var(--cor-fundo);
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.botao:hover {
+  opacity: 0.8;
+}
