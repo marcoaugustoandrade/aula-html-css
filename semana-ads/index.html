@@ -5,44 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IV Semana do CST em ADS</title>
   <link rel="stylesheet" href="estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
 </head>
+
 <body>
+  
   <header>
-    <nav>
-      <ul>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Programação</a></li>
-        <li><a href="#">Localização</a></li>
-        <li><a href="#">Inscreva-se</a></li>
-      </ul>
-    </nav>
-    <div class="cabecalho">
-      <h1 class="titulo">IV Semana do CST em ADS</h1>
-      <div class="data-evento">
-        15 a 20 de novembro de 2022 <br>IFRO Campus Vilhena
+    <div class="container">
+      
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Programação</a></li>
+          <li><a href="#">Localização</a></li>
+          <li><a href="#">Inscreva-se</a></li>
+        </ul>
+      </nav>
+      
+      <div class="cabecalho">
+        <div class="titulo">
+          <a href="#">
+            <img src="imagens/menu.png" alt="Menu">
+          </a>
+          <h1>IV Semana do CST em ADS</h1>
+        </div>
+        <div class="data-evento">
+          15 a 20 de novembro de 2022 <br>IFRO Campus Vilhena
+        </div>
       </div>
+    
     </div>
   </header>
 
   <main>
     <section>
-      <p>A IV Semana do CST em ADS tem como foco proporcionar aos seus alunos e comunidade interessada palestras e oficinas de áreas de Inteligência Artificial, IoT e Data Science.</p>
+      <p class="texto">A <strong>IV Semana do CST em ADS</strong> tem como foco proporcionar aos seus alunos e comunidade interessada palestras e oficinas de áreas de Inteligência Artificial, IoT e Data Science.</p>
     </section>
+    
     <section>
-      <h2>Programação</h2>
-      <h3>15/11/2022</h3>
-
-      <h3>16/11/2022</h3>
+      <h2 class="subtitulo">Programação</h2>
+      <h3 class="subtitulo-h3">15/11/2022</h3>
+      <div class="palestrante">
+        <div>
+          <img src="imagens/mariana.silva.png" alt="Foto da Mariana Silva" class="fotos">
+        </div>
+        <div>
+          <span>Palestra Cidades Inteligentes</span><br>
+          <strong>Mariana Silva</strong>
+        </div>
+      </div>
+      <div class="palestrante">
+        <div>
+          <img src="imagens/mario.oliveira.png" alt="Foto de Mário de Oliveira" class="fotos">
+        </div>
+        <div>
+          <span>Oficina Git e GitHub</span><br>
+          <strong>Mário de Oliveira</strong>
+        </div>
+      </div>      
+      <h3 class="subtitulo-h3">16/11/2022</h3>
+      <div class="palestrante">
+        <div>
+          <img src="imagens/jose.silva.png" alt="Foto de Mário de Oliveira" class="fotos">
+        </div>
+        <div>
+          <span>Palestra Detectando placas com Deep Learning</span><br>
+          <strong>José Silva</strong>
+        </div>
+      </div>
+    </div>        
     </section>
+    
     <section>
-      <h2>Localização</h2>
-      <img src="imagens/mapa.png" alt="Mapa para acesso ao IFRO Vilhena">
+      <h2 class="subtitulo">Localização</h2>
+      <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2586.39666001567!2d-60.11952519547504!3d-12.704148017665629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93b96bfd7eb6706d%3A0xeeb71c2647b98054!2zMTLCsDQyJzE2LjAiUyA2MMKwMDcnMDcuNyJX!5e1!3m2!1spt-BR!2sbr!4v1648768699920!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
     </section>
   </main>
-  <footer>
-    <h2>Realização</h2>
+  
+  <footer class="rodape">
+    <h2 class="subtitulo" style="color: white;">Realização</h2>
     <img src="imagens/logo_ifro.png" alt="Logotipo do IFRO">
     <img src="imagens/logo_fslab.png" alt="Logotipo do FSLab">
   </footer>
+
 </body>
 </html>

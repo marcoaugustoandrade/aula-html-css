@@ -2,31 +2,95 @@
   --cor-primaria: #FFD200;
   --cor-secundaria: #2D3748;
   --cor-fundo: #FFFFFF;
+  --cor-menu: #E5E5E5;
   --cor-detalhe: #E74C3C;
+  --cor-texto: #000000;
   --alpha: 0.6
 }
 
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
 }
 
-.cabecalho {
-  background-image: url('imagens/fundo_cabecalho.png');
-  background-size: cover;
-  height: 571px;
+::selection {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-fundo);
+}
+
+.menu {
+  background-color: var(--cor-menu);
+  font-family: 'Roboto', sans-serif;
+}
+.menu li:hover {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-fundo);
+}
+.menu li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: var(--cor-texto);
+}
+.menu li a:hover {
+  color: var(--cor-fundo);
 }
 
 .titulo {
-  background-color: var(--cor-primaria);
-  padding: 20px;
+  padding: 20px 10px;
+  background-image: linear-gradient(90deg, rgba(255, 210, 0, 0.6) 0%, rgba(255, 210, 0, 0.6) 100%),
+    url('imagens/fundo_cabecalho.png');
+  background-size: cover;
+}
+.titulo h1 {
   text-align: right;
+  font-size: 20px;
+  display: inline-block;
 }
 
 .data-evento {
-  background-color: var(--cor-primaria);
-  opacity: 0.4;
-  text-align: right;
+  background-image: linear-gradient(90deg, rgba(255, 210, 0, 0.6) 0%, rgba(255, 210, 0, 0.6) 100%);
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  margin: auto;
   margin: 20px;
+}
+
+.texto {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.subtitulo {
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+}
+
+.subtitulo-h3 {
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+}
+
+.palestrante div {
+  display: inline-block;
+  margin: 10px;
+}
+
+.fotos {
+  border-radius: 100%;
+  border: 1px var(--cor-secundaria) solid;
+}
+
+.rodape {
+  background-color: var(--cor-secundaria);
+  text-align: center;
+}
+.rodape img {
   padding: 20px;
 }
