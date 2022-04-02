@@ -23,6 +23,12 @@
 .menu {
   background-color: var(--cor-menu);
   font-family: 'Roboto', sans-serif;
+  display: none;
+}
+@media (min-width: 600px) {
+  .menu {
+    display: block;
+  }
 }
 .menu li:hover {
   background-color: var(--cor-secundaria);
